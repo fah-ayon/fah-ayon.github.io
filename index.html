@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abdullah Al Fahad | Computer Science Engineer</title>
-  <meta name="description" content="Abdullah Al Fahad, CSE graduate from BRAC University building AI/ML, systems, embedded IoT, and security projects." />
+  <meta name="description" content="Abdullah Al Fahad, CSE graduate from BRAC University. Projects in AI/ML, systems programming, embedded IoT, and first-author healthcare cloud security research." />
   <meta name="author" content="Abdullah Al Fahad" />
   <meta name="theme-color" content="#080b12" />
+  <link rel="canonical" href="https://fah-ayon.github.io/" />
 
   <meta property="og:title" content="Abdullah Al Fahad | Computer Science Engineer" />
-  <meta property="og:description" content="CSE graduate building intelligent systems, from medical image segmentation to kernel-level filesystems." />
+  <meta property="og:description" content="CSE graduate building intelligent systems, from medical image segmentation to journaling filesystems." />
   <meta property="og:image" content="https://fah-ayon.github.io/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -24,6 +25,21 @@
   <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml" />
   <link rel="alternate icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
   <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdullah Al Fahad",
+    "url": "https://fah-ayon.github.io/",
+    "jobTitle": "Computer Science Engineer",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "BRAC University" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
+    "sameAs": [
+      "https://github.com/fah-ayon",
+      "https://www.linkedin.com/in/abdullahalfahadayon/"
+    ]
+  }
+  </script>
   <script>document.documentElement.classList.remove("no-js");</script>
 </head>
 
@@ -77,13 +93,15 @@
 
       <p class="status">Open to jobs, internships and research</p>
 
-      <div class="typing" aria-hidden="true">
+      <!-- Kept (hidden) so script.js does not break; remove this block and the matching code in script.js if you no longer need it. -->
+      <div class="typing" aria-hidden="true" hidden>
         <span class="typing-text" id="typingText"></span>
         <span class="typing-cursor">█</span>
       </div>
 
       <div class="hero-actions">
-        <a class="btn ghost" href="projects.html">View projects</a>
+        <a class="btn primary" href="projects.html">View projects</a>
+        <a class="btn ghost" href="research.html">Research</a>
         <a class="btn ghost" href="https://github.com/fah-ayon" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a class="btn ghost" href="https://linkedin.com/in/abdullahalfahadayon/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
@@ -91,7 +109,7 @@
       <div class="hero-metrics">
         <div class="metric">
           <div class="metric-title">Areas</div>
-          <div class="metric-value">Software, AI/ML, systems, IoT</div>
+          <div class="metric-value">Software, AI/ML, systems, embedded IoT, graphics, web, security</div>
         </div>
         <div class="metric">
           <div class="metric-title">Location</div>
@@ -100,26 +118,6 @@
       </div>
     </div>
 
-    <div class="hero-right">
-      <div class="card terminal">
-        <div class="terminal-top">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-          <span class="terminal-title">~/engine/profile</span>
-        </div>
-        <div class="terminal-body">
-          <p><span class="cmd">&gt; cat profile.json</span></p>
-          <p class="out">{
-  "role": "Computer Science Engineer",
-  "location": "Dhaka, BD",
-  "areas": ["Software", "AI/ML", "Systems", "IoT", "Graphics", "Security"]
-}</p>
-          <p><span class="cmd">&gt; run diagnostics</span></p>
-          <p class="out ok">System state: operational</p>
-        </div>
-      </div>
-    </div>
   </main>
 
   <section id="about" class="container section reveal">
@@ -128,10 +126,13 @@
     </div>
     <div class="card about-card">
       <p>
-        I'm a CSE graduate from BRAC University who enjoys learning by building across different areas of computer science. My work includes <strong>machine learning</strong> for medical image segmentation and disease classification, <strong>systems programming</strong> with xv6 and filesystem journaling, <strong>embedded IoT</strong> safety systems, <strong>full-stack applications</strong>, <strong>interactive graphics</strong>, and <strong>healthcare cloud security research</strong>.
+        I'm a Computer Science and Engineering graduate from <strong>BRAC University</strong> with a strong interest in exploring how technology works across different layers of computing. I enjoy learning by building, experimenting with ideas, and solving practical problems through software and hardware.
       </p>
       <p>
-        My strongest work is in ML for medical imaging and systems programming, and I like projects where software, data, hardware, and users all have to work together.
+        My projects span <strong>machine learning and deep learning</strong>, including medical image classification and segmentation; <strong>computer vision and data science</strong>; <strong>systems programming</strong>, including operating system scheduling and filesystem journaling; <strong>embedded systems and IoT</strong>; <strong>full-stack web development and database-driven applications</strong>; <strong>3D graphics and interactive simulations</strong>; and <strong>cloud security and AI-assisted access control research</strong>.
+      </p>
+      <p>
+        I enjoy working at the intersection of <strong>software, data, hardware, and security</strong>—whether that means developing an intelligent system, implementing a low-level computing concept, building a connected device, or designing an application that solves a real-world problem. I'm continuously exploring new technologies and strengthening my ability to turn ideas into working systems.
       </p>
     </div>
   </section>
@@ -139,47 +140,112 @@
   <section id="featured" class="container section reveal">
     <div class="section-head">
       <h2>Featured work</h2>
-      <p>A few examples from a broader set of software, AI/ML, systems, embedded, graphics, and security work.</p>
+      <p>Selected from 12 academic and personal projects. Results are reported from each repository's README.</p>
     </div>
     <div class="skills-grid">
       <article class="card project-card">
+        <div class="project-top">
+          <span class="badge unpublished">Research, in preparation</span>
+          <span class="badge role">First author</span>
+        </div>
+        <h3>Securing Healthcare Data in the Cloud</h3>
+        <p class="muted">A zero-trust framework combining sensitivity-tiered encryption, an ML access gatekeeper, and post-access exposure analysis for cloud-hosted health records.</p>
+        <div class="chips">
+          <span class="chip">AES-256-GCM</span>
+          <span class="chip">CKKS</span>
+          <span class="chip">Random Forest</span>
+          <span class="chip">Isolation Forest</span>
+        </div>
+        <p class="result">~516 ms audited decryption, 4,000-record synthetic cohort</p>
+        <a class="btn small ghost" href="research.html">Read the abstract</a>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-top">
+          <span class="badge">Deep learning</span>
+          <span class="badge role">Team</span>
+        </div>
+        <h3>NeuroSeg: Brain Tumor Classification and Segmentation</h3>
+        <p class="muted">Compared separate and joint multi-task training with U-Net and Attention U-Net on 6,000 MRI samples (BRISC 2025).</p>
         <div class="chips">
           <span class="chip">PyTorch</span>
           <span class="chip">Attention U-Net</span>
-          <span class="chip">Joint learning</span>
-          <span class="chip">CNNs</span>
           <span class="chip">OpenCV</span>
         </div>
-        <h3>NeuroSeg: Medical Vision</h3>
-        <p class="muted">Attention U-Net and joint learning for brain tumor segmentation on the BRISC dataset, balancing segmentation quality with inference speed.</p>
+        <p class="result">98.60% classification, 86.62% Dice, 30% faster training with joint learning</p>
         <a class="btn small ghost" href="https://github.com/fah-ayon/NeuroSeg-Classification" target="_blank" rel="noopener noreferrer">View on GitHub</a>
       </article>
 
       <article class="card project-card">
+        <div class="project-top">
+          <span class="badge">Deep learning</span>
+          <span class="badge role">Solo</span>
+        </div>
+        <h3>Deep CNN Classifier for CIFAR-10</h3>
+        <p class="muted">A VGG-inspired CNN with 13 convolutional layers, batch normalization, dropout, data augmentation, AdamW, and early stopping.</p>
+        <div class="chips">
+          <span class="chip">PyTorch</span>
+          <span class="chip">AdamW</span>
+          <span class="chip">Data augmentation</span>
+        </div>
+        <p class="result">93.14% test accuracy, 27.8 min for 200 epochs</p>
+        <a class="btn small ghost" href="https://github.com/fah-ayon/Deep-CNN-Classifier-CIFAR10" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-top">
+          <span class="badge">File systems</span>
+          <span class="badge role">Solo</span>
+        </div>
+        <h3>VSFS: Metadata Journaling</h3>
+        <p class="muted">A block-based filesystem in C with write-ahead journaling, transaction recovery, and a validator that checks bitmaps, directories, link counts, and block pointers.</p>
         <div class="chips">
           <span class="chip">C</span>
-          <span class="chip">xv6 RISC-V</span>
           <span class="chip">Write-ahead logging</span>
+          <span class="chip">Recovery</span>
           <span class="chip">Consistency checks</span>
         </div>
-        <h3>VSFS Metadata Journaling</h3>
-        <p class="muted">A block-based C filesystem with write-ahead logging and consistency checks designed to prevent corruption after crashes.</p>
+        <p class="result">4,096-byte blocks, 64 inodes, 64 data blocks</p>
         <a class="btn small ghost" href="https://github.com/fah-ayon/MetaData-Journaling-VSFS-" target="_blank" rel="noopener noreferrer">View on GitHub</a>
       </article>
 
       <article class="card project-card">
-        <div class="chips">
-          <span class="chip">Random Forest</span>
-          <span class="chip">Isolation Forest</span>
-          <span class="chip">ABAC / BBAC</span>
-          <span class="chip">Multi-level encryption</span>
-          <span class="chip">Cloud storage</span>
-          <span class="chip">Exposure analysis</span>
+        <div class="project-top">
+          <span class="badge">Full-stack</span>
+          <span class="badge role">Team</span>
         </div>
-        <h3>Healthcare Cloud Security</h3>
-        <p class="muted">An unpublished research prototype combining AI-driven access control, multi-level encryption, cloud storage, and exposure analysis.</p>
-        <a class="btn small ghost" href="research.html">View research</a>
+        <h3>EkJatray: Travel Planning Platform</h3>
+        <p class="muted">A MERN-stack platform for destination discovery, transport and accommodation booking, budgeting, itineraries, and offline QR booking passes. Built for CSE471, Spring 2026.</p>
+        <div class="chips">
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Stripe</span>
+        </div>
+        <div class="project-actions">
+          <a class="btn small ghost" href="https://ekjatray.vercel.app/" target="_blank" rel="noopener noreferrer">Live site</a>
+          <a class="btn small ghost" href="https://github.com/MaishaFarzanaJoyee/EkJatray-Bringing-Your-Travel-Pieces-Together" target="_blank" rel="noopener noreferrer">Source</a>
+        </div>
       </article>
+
+      <article class="card project-card">
+        <div class="project-top">
+          <span class="badge">Full-stack</span>
+          <span class="badge role">Solo</span>
+        </div>
+        <h3>CareSync: Hospital Management System</h3>
+        <p class="muted">Patient, staff, and admin modules covering appointments, medical-report PDF downloads, inventory, and emergency blood-donation requests.</p>
+        <div class="chips">
+          <span class="chip">PHP</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">FPDF</span>
+          <span class="chip">HTML/CSS</span>
+        </div>
+        <a class="btn small ghost" href="https://github.com/fah-ayon/CareSync" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </article>
+    </div>
+    <div class="section-more">
+      <a class="btn ghost" href="projects.html">See all 12 projects</a>
     </div>
   </section>
 
@@ -190,38 +256,44 @@
     </div>
     <div class="skills-grid">
       <div class="card">
-        <h3>Intelligence &amp; vision</h3>
-        <p class="muted">Training neural networks for classification and segmentation.</p>
+        <h3>Machine learning</h3>
+        <p class="muted">Training and evaluating neural networks and classical models.</p>
         <div class="chips">
           <span class="chip">PyTorch</span>
           <span class="chip">TensorFlow</span>
-          <span class="chip">OpenCV</span>
-          <span class="chip">CNNs/U-Net</span>
           <span class="chip">Scikit-learn</span>
+          <span class="chip">OpenCV</span>
+          <span class="chip">CNNs / U-Net</span>
+          <span class="chip">NumPy / Pandas</span>
         </div>
       </div>
 
       <div class="card">
         <h3>Systems programming</h3>
-        <p class="muted">Kernel development, memory management and filesystem design.</p>
+        <p class="muted">Kernel scheduling, filesystem journaling, and low-level assembly.</p>
         <div class="chips">
-          <span class="chip">C / C++</span>
-          <span class="chip">xv6 RISC-V</span>
+          <span class="chip">C</span>
+          <span class="chip">C++</span>
+          <span class="chip">Java</span>
+          <span class="chip">SQL</span>
+          <span class="chip">xv6-riscv</span>
+          <span class="chip">QEMU</span>
           <span class="chip">Journaling FS</span>
-          <span class="chip">Assembly</span>
-          <span class="chip">POSIX API</span>
+          <span class="chip">8086 Assembly</span>
         </div>
       </div>
 
       <div class="card">
         <h3>Embedded IoT</h3>
-        <p class="muted">Hardware-software co-design and sensor integration.</p>
+        <p class="muted">Sensor integration and hardware-software prototypes.</p>
         <div class="chips">
           <span class="chip">ESP32</span>
-          <span class="chip">STM32F446RE</span>
           <span class="chip">Arduino</span>
-          <span class="chip">I2C/SPI/UART</span>
-          <span class="chip">Sensor fusion</span>
+          <span class="chip">Raspberry Pi</span>
+          <span class="chip">STM32F446RE</span>
+          <span class="chip">UART / I²C / PWM</span>
+          <span class="chip">GPS &amp; motion sensors</span>
+          <span class="chip">MIT App Inventor</span>
         </div>
       </div>
 
@@ -229,11 +301,14 @@
         <h3>Software engineering</h3>
         <p class="muted">Full-stack applications across frontend, backend and data.</p>
         <div class="chips">
-          <span class="chip">JavaScript</span>
+          <span class="chip">JavaScript / TypeScript</span>
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
           <span class="chip">React</span>
           <span class="chip">Node.js</span>
           <span class="chip">Express</span>
           <span class="chip">MongoDB</span>
+          <span class="chip">PHP / MySQL</span>
         </div>
       </div>
 
@@ -243,19 +318,34 @@
         <div class="chips">
           <span class="chip">Python</span>
           <span class="chip">PyOpenGL</span>
-          <span class="chip">3D rendering</span>
-          <span class="chip">Game logic</span>
+          <span class="chip">3D transformations</span>
+          <span class="chip">Lighting</span>
         </div>
       </div>
 
       <div class="card">
         <h3>Security research</h3>
-        <p class="muted">Protecting healthcare data with access control, encryption and exposure analysis.</p>
+        <p class="muted">Protecting healthcare data with tiered encryption and adaptive access control.</p>
         <div class="chips">
-          <span class="chip">ABAC / BBAC</span>
-          <span class="chip">Encryption</span>
-          <span class="chip">Cloud security</span>
+          <span class="chip">AES-256-GCM</span>
+          <span class="chip">ECC key wrapping</span>
+          <span class="chip">CKKS</span>
+          <span class="chip">Zero trust</span>
           <span class="chip">Isolation Forest</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Tools &amp; platforms</h3>
+        <p class="muted">Development, experimentation, version control, and operating environments.</p>
+        <div class="chips">
+          <span class="chip">Git</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">Jira</span>
+          <span class="chip">Google Cloud Storage</span>
+          <span class="chip">Postman API</span>
+          <span class="chip">Chrome DevTools</span>
+          <span class="chip">Figma</span>
+          <span class="chip">Linux</span>
         </div>
       </div>
     </div>
@@ -298,7 +388,7 @@
       <div class="footer-links">
         <a href="https://github.com/fah-ayon" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/abdullahalfahadayon/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:abdullah.al.fahad2@g.bracu.ac.bd" id="footerEmail" data-email="abdullah.al.fahad2@g.bracu.ac.bd">Email</a>
+        <a href="mailto:abdullah.al.fahad2@g.bracu.ac.bd" id="footerEmail" data-email="abdullah.al.fahad2@g.bracu.ac.bd">abdullah.al.fahad2@g.bracu.ac.bd</a>
         <a href="#home">Back to top</a>
       </div>
     </div>

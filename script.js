@@ -99,6 +99,30 @@ if (footerEmail) {
   });
 }
 
+const copyEmailBtn = document.getElementById("copyEmailBtn");
+if (copyEmailBtn) {
+  copyEmailBtn.addEventListener("click", () => {
+    const email = copyEmailBtn.getAttribute("data-email");
+    const buttonText = copyEmailBtn.querySelector(".btn-text");
+    const feedback = copyEmailBtn.querySelector(".copy-feedback");
+    if (!email || !navigator.clipboard || !buttonText || !feedback) return;
+
+    navigator.clipboard.writeText(email).then(() => {
+      buttonText.hidden = true;
+      feedback.hidden = false;
+      setTimeout(() => {
+        buttonText.hidden = false;
+        feedback.hidden = true;
+      }, 2000);
+    }).catch(() => {
+      buttonText.textContent = "Copy failed";
+      setTimeout(() => {
+        buttonText.textContent = "Copy email";
+      }, 2000);
+    });
+  });
+}
+
 // Scroll reveal (sections only)
 const revealElements = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window && !reducedMotion) {
