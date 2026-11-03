@@ -81,6 +81,23 @@ if (typingEl) {
   else typeLoop();
 }
 
+const footerEmail = document.getElementById("footerEmail");
+if (footerEmail) {
+  footerEmail.addEventListener("click", event => {
+    const email = footerEmail.getAttribute("data-email");
+    if (!email || !navigator.clipboard) return;
+
+    event.preventDefault();
+    navigator.clipboard.writeText(email).then(() => {
+      const originalText = footerEmail.textContent;
+      footerEmail.textContent = "Copied";
+      setTimeout(() => {
+        footerEmail.textContent = originalText;
+      }, 2000);
+    });
+  });
+}
+
 // Scroll reveal (sections only)
 const revealElements = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window && !reducedMotion) {
