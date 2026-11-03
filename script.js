@@ -45,9 +45,10 @@ if (progress) {
 const typingEl = document.getElementById("typingText");
 const lines = [
   "Training neural networks for medical imaging",
-  "Building a journaling filesystem for xv6",
-  "Designing secure cloud access for health data",
-  "Wiring up ESP32 and STM32 sensor systems"
+  "Developing full-stack web apps with MERN",
+  "Wiring up ESP32 and Arduino safety systems",
+  "Rendering 3D games with PyOpenGL",
+  "Designing secure cloud access for health data"
 ];
 
 let lineIndex = 0;
