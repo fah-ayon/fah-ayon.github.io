@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Abdullah Al Fahad</title>
+  <meta name="description" content="Projects by Abdullah Al Fahad across systems programming, AI/ML, embedded IoT, web applications, and computer graphics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg"><div class="grid"></div><div class="glow glow-1"></div><div class="glow glow-2"></div></div>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="brand-dot"></span><span>fah-ayon</span></a>
+      <nav class="links" id="navLinks" aria-label="Main">
+        <a href="index.html#about">About</a><a href="index.html#featured">Work</a><a href="index.html#competencies">Skills</a>
+        <a href="projects.html">Projects</a><a href="research.html">Research</a>
+        <a href="study-materials.html">Academic Resources</a><a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main" class="container section page-content reveal active">
+    <div class="section-head">
+      <h1>Project Showcase</h1>
+      <p>High-impact projects across AI/ML, systems programming, embedded IoT, and computer graphics.</p>
+    </div>
+
+    <div class="category-group">
+      <h2 class="category-title">Systems Programming</h2>
+      <div class="projects-grid">
+        <article class="card project"><div class="project-top"><span class="badge">Kernel Dev</span></div><h3>xv6 Lottery Scheduler</h3><p>Modified the xv6-RISC-V kernel to support proportional-share scheduling. Redesigned context-switching logic to ensure statistical fairness and process prioritization.</p><div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/Lottery-Scheduler-xv6" target="_blank" rel="noreferrer">Source Code</a></div></article>
+        <article class="card project"><div class="project-top"><span class="badge">File Systems</span></div><h3>VSFS Metadata Journaling</h3><p>Architected a block-based filesystem in C with Write-Ahead Logging (WAL). Developed a comprehensive consistency checker to prevent data corruption during crashes.</p><div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/MetaData-Journaling-VSFS-" target="_blank" rel="noreferrer">Source Code</a></div></article>
+        <article class="card project"><div class="project-top"><span class="badge">Assembly</span></div><h3>Low-Level Inventory Engine</h3><p>A management system built in 8086 Assembly. Implemented data structures and transaction logic by direct manipulation of CPU registers and memory addresses in emu8086.</p><div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/Grocery-Inventory-Management-System" target="_blank" rel="noreferrer">Source Code</a></div></article>
+      </div>
+    </div>
+
+    <div class="category-group">
+      <h2 class="category-title">Artificial Intelligence &amp; ML</h2>
+      <div class="projects-grid">
+        <article class="card project"><div class="project-top"><span class="badge">Image Processing</span></div><h3>NeuroSeg: Medical Vision</h3><p>Implemented Attention U-Net and Joint Learning for brain tumor segmentation on the BRISC dataset. Balanced Dice-coefficient accuracy with inference speed.</p><div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/NeuroSeg-Classification" target="_blank" rel="noreferrer">View Model</a></div></article>
+        <article class="card project"><div class="project-top"><span class="badge">Deep Learning</span></div><h3>Deep CNN (CIFAR-10)</h3><p>High-performance CNN with VGG-style architecture using PyTorch. Implemented advanced data augmentation and automated evaluation pipelines for image classification.</p><div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/Deep-CNN-Classifier-CIFAR10" target="_blank" rel="noreferrer">View Model</a></div></article>
+        <article class="card project"><div class="project-top"><span class="badge">AI / ML</span></div><h3>Predictive Health Analytics</h3><p>Machine learning models for disease classification using clinical patient data. Optimized for recall and precision to support early diagnostic decision-making.</p><div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/Disease-Classification-using-Machine-Learning" target="_blank" rel="noreferrer">View Model</a></div></article>
+      </div>
+    </div>
+
+    <div class="category-group">
+      <h2 class="category-title">Full-Stack Web Applications</h2>
+      <div class="projects-grid">
+        <article class="card project"><div class="project-top"><span class="badge">MERN Stack</span></div><h3>EkJatray</h3><p>All-in-one travel planning platform for managing destinations, bookings, budgets, recommendations, and itineraries. Built with React, Tailwind CSS, Node.js, Express, MongoDB, and integrated payment and location services.</p><div class="project-actions"><a class="btn small primary" href="https://ekjatray.vercel.app/" target="_blank" rel="noreferrer">Live Website</a><a class="btn small primary" href="https://github.com/MaishaFarzanaJoyee/EkJatray-Bringing-Your-Travel-Pieces-Together" target="_blank" rel="noreferrer">Source Code</a></div></article>
+      </div>
+    </div>
+
+    <div class="category-group">
+      <h2 class="category-title">Embedded Systems &amp; IoT</h2>
+      <div class="projects-grid">
+        <article class="card project"><div class="project-top"><span class="badge">IoT / Arduino</span></div><h3>SafeCycle</h3><p>Smart safety system for two-wheelers using Arduino. Features crash monitoring, GPS tracking, and collision warnings via sensor fusion.</p><div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/SafeCycle" target="_blank" rel="noreferrer">View Project</a></div></article>
+        <article class="card project"><div class="project-top"><span class="badge">IoT / ESP32</span></div><h3>Vehicle Accident Prevention</h3><p>ESP32-based safety system detecting alcohol and smoke. Automatically disables ignition and sends SOS alerts with GPS location via Telegram.</p><div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/Car-Accident-Detection-and-Prevention-System-with-Alcohol-Smoke-Detector" target="_blank" rel="noreferrer">View Project</a></div></article>
+      </div>
+    </div>
+
+    <div class="category-group">
+      <h2 class="category-title">Computer Graphics</h2>
+      <div class="projects-grid">
+        <article class="card project"><div class="project-top"><span class="badge">OpenGL</span></div><h3>StarWay Survivor</h3><p>3D space shooter built with Python and PyOpenGL. Features complex particle systems, boss AI, explosions, and fuel management.</p><div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/StarWay-Survivor-3D-OpenGL-Space-Shooter" target="_blank" rel="noreferrer">Source Code</a></div></article>
+        <article class="card project"><div class="project-top"><span class="badge">OpenGL</span></div><h3>3D Interactive Chess</h3><p>3D chess environment using Python and PyOpenGL. Implemented move validation algorithms and responsive interactive board rendering.</p><div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/3D-Chess-Game" target="_blank" rel="noreferrer">Source Code</a></div></article>
+      </div>
+    </div>
+  </main>
+  <footer class="footer"><p>&copy; <span id="year"></span> Abdullah Al Fahad</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

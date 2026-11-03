@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abdullah Al Fahad | Computer Science Engineer</title>
-  <meta name="description" content="Abdullah Al Fahad - CSE Student at BRAC University | Specializing in AI/ML, Systems Programming, and Embedded IoT." />
+  <meta name="description" content="Abdullah Al Fahad, CSE graduate from BRAC University building AI/ML, systems, embedded IoT, and security projects." />
   <meta name="author" content="Abdullah Al Fahad" />
+  <meta name="theme-color" content="#080b12" />
+
+  <meta property="og:title" content="Abdullah Al Fahad | Computer Science Engineer" />
+  <meta property="og:description" content="CSE graduate building intelligent systems, from medical image segmentation to kernel-level filesystems." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://fav.farm/code" />
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <script>document.documentElement.classList.remove("no-js");</script>
 </head>
 
 <body>
-  <div class="bg">
+  <a class="skip-link" href="#home">Skip to content</a>
+  <div class="progress" id="progress"></div>
+
+  <div class="bg" aria-hidden="true">
     <div class="grid"></div>
     <div class="glow glow-1"></div>
     <div class="glow glow-2"></div>
@@ -19,19 +34,22 @@
 
   <header class="nav">
     <div class="nav-inner">
-      <a class="brand" href="#home">
+      <a class="brand" href="index.html">
         <span class="brand-dot"></span>
         <span>fah-ayon</span>
       </a>
 
-      <nav class="links" id="navLinks">
+      <nav class="links" id="navLinks" aria-label="Main">
         <a href="#about">About</a>
+        <a href="#featured">Work</a>
         <a href="#competencies">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="projects.html">Projects</a>
+        <a href="research.html">Research</a>
+        <a href="study-materials.html">Academic Resources</a>
+        <a href="contact.html">Contact</a>
       </nav>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -41,7 +59,7 @@
     <div class="hero-left">
       <p class="tag">
         <span class="pulse"></span>
-        Computer Science & Engineering Student @ BRAC University
+        CSE graduate, BRAC University
       </p>
 
       <h1 class="title">
@@ -49,34 +67,31 @@
       </h1>
 
       <p class="subtitle">
-        Bridging the gap between high-level machine intelligence and low-level system performance. 
-        Specializing in hardware-software co-design and scalable AI frameworks.
+        I explore computer science through practical work in software engineering, AI/ML, systems programming, embedded IoT, computer graphics, and cybersecurity research.
       </p>
 
-      <div class="typing">
-        <span class="typing-label">Focus:</span>
+      <p class="status">Open to jobs, internships and research</p>
+
+      <div class="typing" aria-hidden="true">
+        <span class="typing-label">Now:</span>
         <span class="typing-text" id="typingText"></span>
         <span class="typing-cursor">█</span>
       </div>
 
       <div class="hero-actions">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn ghost" href="https://github.com/fah-ayon" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="btn ghost" href="https://linkedin.com/in/abdullahalfahadayon/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn ghost" href="projects.html">View projects</a>
+        <a class="btn ghost" href="https://github.com/fah-ayon" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn ghost" href="https://linkedin.com/in/abdullahalfahadayon/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
 
       <div class="hero-metrics">
         <div class="metric">
-          <div class="metric-title">Focus</div>
-          <div class="metric-value">AI/ML + Systems + IoT</div>
+          <div class="metric-title">Areas</div>
+          <div class="metric-value">Software, AI/ML, systems, IoT</div>
         </div>
         <div class="metric">
           <div class="metric-title">Location</div>
           <div class="metric-value">Dhaka, Bangladesh</div>
-        </div>
-        <div class="metric">
-          <div class="metric-title">Email</div>
-          <div class="metric-value">abdullah.al.fahad2@g.bracu.ac.bd</div>
         </div>
       </div>
     </div>
@@ -90,15 +105,14 @@
           <span class="terminal-title">~/engine/profile</span>
         </div>
         <div class="terminal-body">
-          <p><span class="cmd">> cat profile.json</span></p>
+          <p><span class="cmd">&gt; cat profile.json</span></p>
           <p class="out">{
-  "role": "Systems & AI Engineer",
+  "role": "Computer Science Engineer",
   "location": "Dhaka, BD",
-  "focus": ["Kernel Dev", "Computer Vision", "IoT Architecture"],
-  "status": "Available for Research/Internship"
+  "areas": ["Software", "AI/ML", "Systems", "IoT", "Graphics", "Security"]
 }</p>
-          <p><span class="cmd">> run diagnostics</span></p>
-          <p class="out ok">System state: Operational</p>
+          <p><span class="cmd">&gt; run diagnostics</span></p>
+          <p class="out ok">System state: operational</p>
         </div>
       </div>
     </div>
@@ -106,27 +120,74 @@
 
   <section id="about" class="container section reveal">
     <div class="section-head">
-      <h2>Professional Summary</h2>
+      <h2>About</h2>
     </div>
     <div class="card about-card">
-      <blockquote>
-        "I build at the intersection of machine intelligence and system-level performance. My goal is to optimize the software-to-hardware pipeline for the next generation of intelligent systems."
-      </blockquote>
       <p>
-        I'm a Computer Science & Engineering student at BRAC University passionate about building practical, real-world systems using AI/ML, embedded IoT, and software engineering. I enjoy working across the stack, from training deep learning models for healthcare applications to designing sensor-driven safety systems with microcontrollers. Whether I'm implementing OS-level concepts in xv6, developing full-stack solutions, or building OpenGL-based projects, my focus is always the same: write clean, reliable code and turn ideas into working products.
+        I'm a CSE graduate from BRAC University who enjoys learning by building across different areas of computer science. My work includes <strong>machine learning</strong> for medical image segmentation and disease classification, <strong>systems programming</strong> with xv6 and filesystem journaling, <strong>embedded IoT</strong> safety systems, <strong>full-stack applications</strong>, <strong>interactive graphics</strong>, and <strong>healthcare cloud security research</strong>.
       </p>
+      <p>
+        My strongest work is in ML for medical imaging and systems programming, and I like projects where software, data, hardware, and users all have to work together.
+      </p>
+    </div>
+  </section>
+
+  <section id="featured" class="container section reveal">
+    <div class="section-head">
+      <h2>Featured work</h2>
+      <p>A few examples from a broader set of software, AI/ML, systems, embedded, graphics, and security work.</p>
+    </div>
+    <div class="skills-grid">
+      <article class="card project-card">
+        <div class="chips">
+          <span class="chip">PyTorch</span>
+          <span class="chip">Attention U-Net</span>
+          <span class="chip">Joint learning</span>
+          <span class="chip">CNNs</span>
+          <span class="chip">OpenCV</span>
+        </div>
+        <h3>NeuroSeg: Medical Vision</h3>
+        <p class="muted">Attention U-Net and joint learning for brain tumor segmentation on the BRISC dataset, balancing segmentation quality with inference speed.</p>
+        <a class="btn small ghost" href="https://github.com/fah-ayon/NeuroSeg-Classification" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </article>
+
+      <article class="card project-card">
+        <div class="chips">
+          <span class="chip">C</span>
+          <span class="chip">xv6 RISC-V</span>
+          <span class="chip">Write-ahead logging</span>
+          <span class="chip">Consistency checks</span>
+        </div>
+        <h3>VSFS Metadata Journaling</h3>
+        <p class="muted">A block-based C filesystem with write-ahead logging and consistency checks designed to prevent corruption after crashes.</p>
+        <a class="btn small ghost" href="https://github.com/fah-ayon/MetaData-Journaling-VSFS-" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </article>
+
+      <article class="card project-card">
+        <div class="chips">
+          <span class="chip">Random Forest</span>
+          <span class="chip">Isolation Forest</span>
+          <span class="chip">ABAC / BBAC</span>
+          <span class="chip">Multi-level encryption</span>
+          <span class="chip">Cloud storage</span>
+          <span class="chip">Exposure analysis</span>
+        </div>
+        <h3>Healthcare Cloud Security</h3>
+        <p class="muted">An unpublished research prototype combining AI-driven access control, multi-level encryption, cloud storage, and exposure analysis.</p>
+        <a class="btn small ghost" href="research.html">View research</a>
+      </article>
     </div>
   </section>
 
   <section id="competencies" class="container section reveal">
     <div class="section-head">
-      <h2>Domain Competencies</h2>
-      <p>Categorized expertise across the technical stack.</p>
+      <h2>Skills</h2>
+      <p>Grouped by what I've actually built with them.</p>
     </div>
     <div class="skills-grid">
-      <div class="card reveal">
-        <h3>Intelligence & Vision</h3>
-        <p class="muted">Architecting and training neural networks for complex classification and segmentation.</p>
+      <div class="card">
+        <h3>Intelligence &amp; vision</h3>
+        <p class="muted">Training neural networks for classification and segmentation.</p>
         <div class="chips">
           <span class="chip">PyTorch</span>
           <span class="chip">TensorFlow</span>
@@ -136,9 +197,9 @@
         </div>
       </div>
 
-      <div class="card reveal">
-        <h3>Systems Programming</h3>
-        <p class="muted">Kernel-level development, memory management, and filesystem architecture.</p>
+      <div class="card">
+        <h3>Systems programming</h3>
+        <p class="muted">Kernel development, memory management and filesystem design.</p>
         <div class="chips">
           <span class="chip">C / C++</span>
           <span class="chip">xv6 RISC-V</span>
@@ -148,143 +209,95 @@
         </div>
       </div>
 
-      <div class="card reveal">
+      <div class="card">
         <h3>Embedded IoT</h3>
-        <p class="muted">Hardware-software co-design and low-latency sensor integration.</p>
+        <p class="muted">Hardware-software co-design and sensor integration.</p>
         <div class="chips">
           <span class="chip">ESP32</span>
           <span class="chip">STM32F446RE</span>
           <span class="chip">Arduino</span>
           <span class="chip">I2C/SPI/UART</span>
-          <span class="chip">Sensor Fusion</span>
+          <span class="chip">Sensor fusion</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Software engineering</h3>
+        <p class="muted">Full-stack applications across frontend, backend and data.</p>
+        <div class="chips">
+          <span class="chip">JavaScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+          <span class="chip">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Graphics &amp; interaction</h3>
+        <p class="muted">Interactive 3D scenes and game logic.</p>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">PyOpenGL</span>
+          <span class="chip">3D rendering</span>
+          <span class="chip">Game logic</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Security research</h3>
+        <p class="muted">Protecting healthcare data with access control, encryption and exposure analysis.</p>
+        <div class="chips">
+          <span class="chip">ABAC / BBAC</span>
+          <span class="chip">Encryption</span>
+          <span class="chip">Cloud security</span>
+          <span class="chip">Isolation Forest</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="container section reveal">
+  <section id="education" class="container section reveal">
     <div class="section-head">
-      <h2>Project Showcase</h2>
-      <p>High-impact projects across AI/ML, systems programming, embedded IoT, and computer graphics.</p>
+      <h2>Education</h2>
     </div>
+    <ol class="timeline">
+      <li>
+        <span class="when">Fall 2021 – Spring 2026</span>
+        <h3>Bachelor in Computer Science and Engineering</h3>
+        <p class="muted">BRAC University</p>
+      </li>
+      <li>
+        <span class="when">2020</span>
+        <h3>Higher Secondary Certificate</h3>
+        <p class="muted">Monipur High School and College</p>
+      </li>
+      <li>
+        <span class="when">2018</span>
+        <h3>Secondary School Certificate</h3>
+        <p class="muted">Adamjee Cantonment Public School</p>
+      </li>
+    </ol>
+  </section>
 
-    <div class="category-group reveal">
-      <h3 class="category-title">Systems Programming</h3>
-      <div class="projects-grid">
-        <article class="card project reveal">
-          <div class="project-top"><span class="badge">Kernel Dev</span></div>
-          <h3>xv6 Lottery Scheduler</h3>
-          <p>Modified the xv6-RISC-V kernel to support proportional-share scheduling. Redesigned context-switching logic to ensure statistical fairness and process prioritization.</p>
-          <div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/Lottery-Scheduler-xv6" target="_blank">View Implementation</a></div>
-        </article>
-
-        <article class="card project reveal">
-          <div class="project-top"><span class="badge">File Systems</span></div>
-          <h3>VSFS Metadata Journaling</h3>
-          <p>Architected a block-based filesystem in C with Write-Ahead Logging (WAL). Developed a comprehensive consistency checker to prevent data corruption during crashes.</p>
-          <div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/MetaData-Journaling-VSFS-" target="_blank">Core Logic</a></div>
-        </article>
-
-        <article class="card project reveal">
-          <div class="project-top"><span class="badge">Assembly</span></div>
-          <h3>Low-Level Inventory Engine</h3>
-          <p>A management system built in 8086 Assembly. Implemented data structures and transaction logic by direct manipulation of CPU registers and memory addresses in emu8086.</p>
-          <div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/Grocery-Inventory-Management-System" target="_blank">View Code</a></div>
-        </article>
-      </div>
-    </div>
-
-    <div class="category-group reveal">
-      <h3 class="category-title">Artificial Intelligence & ML</h3>
-      <div class="projects-grid">
-        <article class="card project reveal">
-          <div class="project-top"><span class="badge">Image Processing</span></div>
-          <h3>NeuroSeg: Medical Vision</h3>
-          <p>Implemented Attention U-Net and Joint Learning for brain tumor segmentation on the BRISC dataset. Balanced Dice-coefficient accuracy with inference speed.</p>
-          <div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/NeuroSeg-Classification" target="_blank">View Model</a></div>
-        </article>
-
-        <article class="card project reveal">
-          <div class="project-top"><span class="badge">Deep Learning</span></div>
-          <h3>Deep CNN (CIFAR-10)</h3>
-          <p>High-performance CNN with VGG-style architecture using PyTorch. Implemented advanced data augmentation and automated evaluation pipelines for image classification.</p>
-          <div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/Deep-CNN-Classifier-CIFAR10" target="_blank">View Model</a></div>
-        </article>
-
-        <article class="card project reveal">
-          <div class="project-top"><span class="badge">AI / ML</span></div>
-          <h3>Predictive Health Analytics</h3>
-          <p>Machine learning models for disease classification using clinical patient data. Optimized for recall and precision to support early diagnostic decision-making.</p>
-          <div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/Disease-Classification-using-Machine-Learning" target="_blank">View Model</a></div>
-        </article>
-      </div>
-    </div>
-
-    <div class="category-group reveal">
-      <h3 class="category-title">Embedded Systems & IoT</h3>
-      <div class="projects-grid">
-        <article class="card project reveal">
-          <div class="project-top"><span class="badge">IoT / Arduino</span></div>
-          <h3>SafeCycle</h3>
-          <p>Smart safety system for two-wheelers using Arduino. Features crash monitoring, GPS tracking, and collision warnings via sensor fusion.</p>
-          <div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/SafeCycle" target="_blank">View Project</a></div>
-        </article>
-
-        <article class="card project reveal">
-          <div class="project-top"><span class="badge">IoT / ESP32</span></div>
-          <h3>Vehicle Accident Prevention</h3>
-          <p>ESP32-based safety system detecting alcohol and smoke. Automatically disables ignition and sends SOS alerts with GPS location via Telegram.</p>
-          <div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/Car-Accident-Detection-and-Prevention-System-with-Alcohol-Smoke-Detector" target="_blank">View Project</a></div>
-        </article>
-      </div>
-    </div>
-
-    <div class="category-group reveal">
-      <h3 class="category-title">Computer Graphics</h3>
-      <div class="projects-grid">
-        <article class="card project reveal">
-          <div class="project-top"><span class="badge">OpenGL</span></div>
-          <h3>StarWay Survivor</h3>
-          <p>3D space shooter built with Python and PyOpenGL. Features complex particle systems, boss AI, explosions, and fuel management.</p>
-          <div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/StarWay-Survivor-3D-OpenGL-Space-Shooter" target="_blank">Source Code</a></div>
-        </article>
-
-        <article class="card project reveal">
-          <div class="project-top"><span class="badge">OpenGL</span></div>
-          <h3>3D Interactive Chess</h3>
-          <p>3D chess environment using Python and PyOpenGL. Implemented move validation algorithms and responsive interactive board rendering.</p>
-          <div class="project-actions"><a class="btn small primary" href="https://github.com/fah-ayon/3D-Chess-Game" target="_blank">Source Code</a></div>
-        </article>
-      </div>
+  <section id="contact-cta" class="container section reveal cta">
+    <h2>Let's work together</h2>
+    <p>I'm looking for roles, internships and research collaborations in ML, systems and security.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="contact.html">Get in touch</a>
     </div>
   </section>
 
-<section id="contact" class="container section reveal">
-  <div class="section-head">
-    <h2>Connect With Me</h2>
-    <p>Open to collaborations in AI research, systems engineering, and embedded development.</p>
-  </div>
-  <div class="card">
-    <h3>Contact Information</h3>
-    <p class="muted">
-      Reach out via professional networks or copy my email address for inquiries regarding internships or technical projects.
-    </p>
-    <div class="hero-actions">
-      <button class="btn primary" id="copyEmailBtn" data-email="abdullah.al.fahad2@g.bracu.ac.bd">
-        <span class="btn-text">Email Me</span>
-        <span class="copy-feedback" style="display: none;">Copied!</span>
-      </button>
-      
-      <a class="btn primary" href="https://github.com/fah-ayon" target="_blank" rel="noreferrer">GitHub</a>
-      <a class="btn primary" href="https://linkedin.com/in/abdullahalfahadayon/" target="_blank" rel="noreferrer">LinkedIn</a>
-    </div>
-  </div>
-</section>
-
   <footer class="footer">
-    <p>
-      &copy; <span id="year"></span> Abdullah Al Fahad
-    </p>
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Abdullah Al Fahad</p>
+      <div class="footer-links">
+        <a href="https://github.com/fah-ayon" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/abdullahalfahadayon/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:abdullah.al.fahad2@g.bracu.ac.bd">Email</a>
+        <a href="#home">Back to top</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>

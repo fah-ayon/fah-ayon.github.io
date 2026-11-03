@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Abdullah Al Fahad</title>
+  <meta name="description" content="Research work by Abdullah Al Fahad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg"><div class="grid"></div><div class="glow glow-1"></div><div class="glow glow-2"></div></div>
+  <header class="nav"><div class="nav-inner">
+    <a class="brand" href="index.html"><span class="brand-dot"></span><span>fah-ayon</span></a>
+    <nav class="links" id="navLinks" aria-label="Main"><a href="index.html#about">About</a><a href="index.html#featured">Work</a><a href="index.html#competencies">Skills</a><a href="projects.html">Projects</a><a href="research.html">Research</a><a href="study-materials.html">Academic Resources</a><a href="contact.html">Contact</a></nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div></header>
+  <main id="main" class="container section page-content reveal active">
+    <div class="section-head"><h1>Research</h1></div>
+    <div class="projects-grid">
+      <article class="card project">
+        <div class="project-top"><span class="badge unpublished">Unpublished</span></div>
+        <h2>Enhancing Cloud Security for Healthcare Data: AI-Driven Encryption and Access Optimization</h2>
+        <h3>Problem</h3>
+        <p>Healthcare systems need to protect sensitive records while supporting practical access for staff and patients in cloud environments.</p>
+        <h3>Approach</h3>
+        <p>The prototype assigns sensitivity labels and combines ABAC and BBAC policy data with Random Forest and Isolation Forest models for AI-driven staff access decisions. Patients use direct private-key access.</p>
+        <h3>Exposure intelligence</h3>
+        <p>Access behaviour is scored to generate exposure advisories and recommend key rotation or monitoring intensity without changing the encryption level selected at provisioning.</p>
+        <h3>Encryption and storage</h3>
+        <p>Records use fixed multi-level encryption, wrapped key management, cloud object storage, and an L3 homomorphic encryption demonstration for highly sensitive data.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="footer"><p>&copy; <span id="year"></span> Abdullah Al Fahad</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
